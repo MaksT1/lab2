@@ -1,22 +1,22 @@
 public class zad2 {
     public static void main(String[] args){
         Student s1 = new Student("Jan", "Kowalski", "s35262", 75.0, 4);
-        System.out.println(s1.imie + " " + s1.nazwisko + " " + s1.id + " " + s1.obecnosc + " " + s1.ocena);
+        System.out.println(s1.getImie() + " " + s1.getNazwisko() + " " + s1.getId() + " " + s1.getObecnosc() + " " + s1.getOcena());
 
         Student s2 = new Student("s35262", 75.0, 4);
-        System.out.println(s2.imie + " " + s2.nazwisko + " " + s2.id + " " + s2.obecnosc + " " + s2.ocena);
+        System.out.println(s2.getImie() + " " + s2.getNazwisko() + " " + s2.getId() + " " + s2.getObecnosc() + " " + s2.getOcena());
 
         Student s3 = new Student("Jan", "Kowalski", "s35262", 40.0, 4);
-        System.out.println(s3.imie + " " + s3.nazwisko + " " + s3.id + " " + s3.obecnosc + " " + s3.ocena);
+        System.out.println(s3.getImie() + " " + s3.getNazwisko() + " " + s3.getId() + " " + s3.getObecnosc() + " " + s3.getOcena());
     }
 }
 
 class Student{
-    String imie;
-    String nazwisko;
-    String id;
-    double obecnosc;
-    int ocena;
+    private String imie;
+    private String nazwisko;
+    private String id;
+    private double obecnosc;
+    private int ocena;
     Student(String imie, String nazwisko, String id, double obecnosc, int ocena){
         this.imie = (imie != null && !imie.trim().isEmpty()) ? imie : "Unknown";
         this.nazwisko = (nazwisko != null && !nazwisko.trim().isEmpty()) ? nazwisko : "Unknown";
