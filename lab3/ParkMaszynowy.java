@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ParkMaszynowy {
     public static void main(String[] args){
-        Lokomotywa lok1 = new Lokomotywa("abc", "abc", 110000.0, RodzajSilnika.Benzyna, 450, 6);
+        Lokomotywa lok1 = new Lokomotywa("bcd", "abc", 110000.0, RodzajSilnika.Benzyna, 450, 6);
         Lokomotywa lok2 = new Lokomotywa("dbd", "dbd", 0.0, RodzajSilnika.EV, 230, 4);
 
         Kosiarka kos1 = new Kosiarka("Kosiareczki", "Kosiarek", 0.0, RodzajSilnika.EV, true, true, 3);
