@@ -15,6 +15,6 @@ abstract class Maszyna{
         this.pojemnoscSilnika = pojemnoscSilnika;
         this.rodzajSilnika = rodzajSilnika;
     }
-
+    public abstract void wyswietl();
 }
 
