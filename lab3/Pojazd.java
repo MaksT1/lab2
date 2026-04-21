@@ -1,6 +1,6 @@
 package lab3;
 
-public class Pojazd extends Maszyna{
+public abstract class Pojazd extends Maszyna{
     protected double moc;
     protected double momentObrotowy;
     protected int nrPojazdu;
