@@ -1,7 +1,7 @@
 package lab3;
 
 enum RodzajSilnika {
-    Benzyna, Diesel, LPG, EV
+    Benzyna, Diesel, LPG, EV, BRAK
 }
 
 abstract class Maszyna{
@@ -18,5 +18,3 @@ abstract class Maszyna{
 
 }
 
-public class lab3_zad1 {
-}
