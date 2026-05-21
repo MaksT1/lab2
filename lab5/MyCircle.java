@@ -67,5 +67,15 @@ public class MyCircle {
         return center.distance(another.getCenter());
     }
 
+    public static void main(String[] args){
+        MyCircle circ = new MyCircle(1, 2, 5);
+        System.out.println(circ.toString());
+        System.out.printf("%.2f",circ.getArea());
+        System.out.println();
+        System.out.printf("%.2f",circ.getCircumference());
+        System.out.println();
+        MyCircle circ2 = new MyCircle(4, 5, 3);
+        System.out.printf("%.2f",circ.distance(circ2));
+    }
 
 }
